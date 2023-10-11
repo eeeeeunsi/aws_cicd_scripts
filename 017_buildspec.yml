@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo "PRE_BUILD start...$(date)"
+      - env | sort
+      
+  build:
+    commands:
+      - echo "BUILD start...$(date)"
+
+  post_build:
+    commands:
+      - echo "POST_BUILD start...$(date)"
+
